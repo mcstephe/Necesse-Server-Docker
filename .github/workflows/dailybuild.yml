@@ -81,7 +81,7 @@ jobs:
             JAVAPLATFORM=linux/${{ matrix.platform }}
           platforms: linux/${{ matrix.platform }}
           push: ${{ github.event_name != 'pull_request' }}
-          tags: karyeet/necesse-server-docker:${{ matrix.platform }}-${{ env.NBuildNum }}
+          tags: stevenski8/necesse-server-docker:${{ matrix.platform }}-${{ env.NBuildNum }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
